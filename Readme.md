@@ -42,10 +42,11 @@ MY_PHONE_NUMBER=+91xxxxxxxxxx
 `python3 motbot.py`
 
 ### 📂 Project Structure
-
+```bash
 M0tB0t/
 ├── motbot.py           
 ├── .env               
 ├── .gitignore          
 ├── requirements.txt    
 └── README.md          
+```
