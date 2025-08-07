@@ -1,6 +1,6 @@
-# 💬 M0tB0t — Your WhatsApp Hype Buddy
+# 💬 M0tB0t : Your WhatsApp Hype Buddy
 
-**M0tB0t** is a simple Python bot that sends you motivational images twice a day straight to your WhatsApp — because sometimes we all need a little kick to keep going. It grabs content from [r/GetMotivated](https://www.reddit.com/r/GetMotivated) and sends it to you using Twilio.
+**M0tB0t** is a simple Python bot that sends you motivational images twice a day straight to your WhatsApp because sometimes we all need a little kick to keep going. It grabs content from [r/GetMotivated](https://www.reddit.com/r/GetMotivated) and sends it to you using Twilio.
 
 No fluff, just motivation — morning and Night
 

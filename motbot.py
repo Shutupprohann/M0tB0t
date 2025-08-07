@@ -18,6 +18,7 @@ reddit = praw.Reddit(
     )
 
 posts = []
+emojis = ["🌞", "✨", "🌟", "💫", "🌈", "☀️", "🔆", "🧠", "💡", "🎯", "🚀", "🌸", "🦋", "🌼", "💥", "🙌", "🪄", "🎉", "🔥", "🍀", "📈"]
 
 ## Scraping post 
 
@@ -25,6 +26,7 @@ subreddit = reddit.subreddit('GetMotivated').hot(limit=500)
 for post in subreddit:
 	if post.url.lower().endswith(('.jpg','.png','.jpeg')):
 		posts.append(post.url)
+	else:	
 		pass 
 
 ## Twilio configs
@@ -43,8 +45,8 @@ def send_message(text):
 	media_url = posts[random.randint(0,50)],
 	)
 
-schedule.every().day.at("09:00","Asia/Kolkata").do(send_message,text='You will make yourself proud today ✨✨')
-schedule.every().day.at("23:00","Asia/Kolkata").do(send_message,text='You did well Today ✨✨')
+schedule.every().day.at("15:15","Asia/Kolkata").do(send_message,text=f'You will make yourself proud today {emojis[random.randint(0,21)]*2} ')
+schedule.every().day.at("23:00","Asia/Kolkata").do(send_message,text=f'You did well Today {emojis[random.randint(0,21)]*2}')
 
 while True:
 	try:
